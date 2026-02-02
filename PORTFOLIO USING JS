@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishu Raj | Portfolio</title>
+  <link rel="shortcut icon" href="boy.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to bottom, #2c1e4a, #0a1a2f);
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 110px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #4caf50;
+      margin-bottom: 20px;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #4caf50;
+    }
+
+    /* DESIGNED BY */
+    .top-left {
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      font-weight: bold;
+      z-index: 1001;
+    }
+
+    /* SECTION TYPING */
+    .section-typing {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #eaffea;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #ff4757;
+      width: 0;
+      margin-bottom: 25px;
+      animation: typingLoop 4s steps(35, end) infinite,
+        blink .7s infinite;
+    }
+
+    @keyframes typingLoop {
+      0% {
+        width: 0;
+      }
+
+      70% {
+        width: 36ch;
+      }
+
+      100% {
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* HERO */
+    .changing-text {
+      font-size: 3rem;
+    }
+
+    .name {
+      font-size: 2.2rem;
+      font-family: "Brush Script MT", cursive;
+      color: #0dd0d7;
+    }
+
+    .typing {
+      font-size: 3rem;
+      font-weight: bold;
+      border-right: 3px solid #ff4757;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 18ch;
+      animation: typing 3s steps(30, end) forwards, blink .7s infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 18ch;
+      }
+    }
+
+    /* COMMON */
+    .box {
+      max-width: 950px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .skills span {
+      padding: 10px 18px;
+      border: 1px solid #4caf50;
+      border-radius: 20px;
+    }
+
+    footer {
+      padding: 20px;
+      background: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#activities">Activities</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="top-left">Designed by <b>Nishu Raj</b></div>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="section-typing"></div>
+    <div class="changing-text" id="greeting">नमस्कार</div>
+    <div>I Am</div>
+    <div class="name">Nishu Raj</div>
+  </section>
+
+  <section>
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <div class="typing">Nishu Raj</div>
+    <p style="color:#9cc1ff;">I love to code — it makes me happy.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Profile</h2>
+    <div class="box">
+      Aspiring Web Developer Intern currently engaging myself in the arena of
+      Computer Applications at Manav Rachna International Institute of Research
+      and Studies. Detail-oriented computer applications student, always on the
+      lookout for opportunities in Programming, Database and Project Management.
+      Skilled in problem solving and creating efficient, user-friendly solutions.Coding & Programming has made my life
+      much more intresting than earlier. Coding & DSA made me to think much Deep in Structured Manner.
+      Each challenge is a chance to learn and grow.
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Data Analysis</span>
+      <span>Project Management</span>
+      <span>Effective Communication</span>
+      <span>Teamwork</span>
+      <span>Technical Knowledge</span>
+      <span>Leadership</span>
+      <span>Logical Thinking</span>
+      <span>Creative Problem Solving</span>
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>Python</span><span>Java</span><span>C++</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Projects</h2>
+    <div class="box">
+      • Real Time Scam Detector using WebRTC<br><br>
+      • Fire Detection Alarm System using Arduino
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Education</h2>
+    <div class="box">
+      <b>Bachelor of Computer Application</b> (2023–2026)<br>
+      Specialization in Data Science & Big Data Analytics<br>
+      Manav Rachna International Institute of Research and Studies
+      <hr>
+      <b>10+2</b> (2021–2023)<br>
+      Sadhana Devi Vidhyapith
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Certifications</h2>
+    <div class="box">
+      DevOps Introduction – Great Learning<br>
+      Programming with C++ – Great Learning<br>
+      Business Communication – Swayam (IGNOU)<br>
+      E-Business – Swayam (IGNOU)<br>
+      Wildlife Ecology – Swayam (IGNOU)<br>
+      Forest and their Management – Swayam (IGNOU)
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Extracurricular Activities</h2>
+    <div class="box">
+      Participated in HackIndia 2024<br>
+      Participated in CyberCup 4.0 & 5.0<br>
+      Participated in KRMU 4.0<br>
+      InnoSkill 2024<br>
+      Hack or Crack MRIIRS<br>
+      Mega Blood Donation Camp 2023<br>
+      Volunteer in Mega Blood Donation Camp 2025
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Research Paper</h2>
+    <div class="box">
+      Emerging Ethical and Practical Implications of AI Integration in Education<br>
+      <b>(IEEE Conference)</b>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-typing">Hi There, I am Nishu Raj →</div>
+    <h2>Contact</h2>
+    <div class="box">
+      📍 New Delhi, India<br>
+      📞 +91 7320810888<br>
+      📧 nishuraj7755@gmail.com<br>
+      🌐 github.com/mr-nishuraj<br>
+      🔗 linkedin.com/in/nishuraj05
+    </div>
+  </section>
+
+  <footer>© 2026 Nishu Raj | Portfolio</footer>
+
+  <script>
+    /* Greeting */
+    const greetings = ["नमस्कार", "Hello", "Hola", "Bonjour", "Ciao", "こんにちは", "안녕하세요"];
+    let gi = 0;
+    setInterval(() => {
+      document.getElementById("greeting").innerText =
+        greetings[gi++ % greetings.length];
+    }, 1000);
+
+    /* AUTO SECTION CHANGE (3s FIXED) */
+    const order = [
+      "home", "about", "skills", "projects",
+      "education", "certifications", "activities", "research", "contact"
+    ];
+    let idx = 0, auto = true;
+    ["wheel", "keydown", "touchstart"].forEach(e => {
+      window.addEventListener(e, () => auto = false);
+    });
+    setTimeout(() => {
+      setInterval(() => {
+        if (auto && idx < order.length) {
+          document.getElementById(order[idx++])
+            .scrollIntoView({ behavior: "smooth" });
+        }
+      }, 3000);
+    }, 1500);
+  </script>
+
+</body>
+
+</html>
