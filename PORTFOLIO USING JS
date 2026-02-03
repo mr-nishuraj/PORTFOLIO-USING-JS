@@ -323,7 +323,7 @@
           document.getElementById(order[idx++])
             .scrollIntoView({ behavior: "smooth" });
         }
-      }, 3000);
+      }, 5000);
     }, 1500);
   </script>
 
